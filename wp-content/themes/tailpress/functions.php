@@ -7,6 +7,8 @@ function tailpress_enqueue_scripts() {
 	$theme = wp_get_theme();
 
 	wp_enqueue_style( 'tailpress', tailpress_get_mix_compiled_asset_url( 'css/app.css' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_style( 'tailpress-fonts', tailpress_get_mix_compiled_asset_url( 'css/fonts.css' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_style( 'tailpress-tailwind', tailpress_get_mix_compiled_asset_url( 'css/tailwind.css' ), array(), $theme->get( 'Version' ) );
 	wp_enqueue_script( 'tailpress', tailpress_get_mix_compiled_asset_url( 'js/app.js' ), array(), $theme->get( 'Version' ) );
 }
 
@@ -169,3 +171,64 @@ function tailpress_nav_menu_add_submenu_class( $classes, $args, $depth ) {
 }
 
 add_filter( 'nav_menu_submenu_css_class', 'tailpress_nav_menu_add_submenu_class', 10, 3 );
+
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Theme General Settings',
+		'menu_title'	=> 'Theme Settings',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability'	=> 'edit_posts',
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Header Settings',
+		'menu_title'	=> 'Header',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Footer Settings',
+		'menu_title'	=> 'Footer',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	
+}
+
+
+function tailwind_specialty_cpt()
+{
+    $labels = array(
+        'name' => _x('Performance', 'plural'),
+        'singular_name' => _x('Performance', 'singular'),
+        'menu_name' => _x('Performance', 'admin menu'),
+        'name_admin_bar' => _x('Performance', 'admin bar'),
+        'add_new' => _x('Add New', 'add new'),
+        'add_new_item' => __('Add New Performance'),
+        'new_item' => __('New Performance'),
+        'edit_item' => __('Edit Performance'),
+        'view_item' => __('View Performance'),
+        'all_items' => __('All Performance'),
+        'search_items' => __('Search Performance'),
+        'not_found' => __('No Performance found.'),
+    );
+    $args = array(
+        'labels' => $labels,
+        'menu_icon' => 'dashicons-media-spreadsheet',
+        'supports' => array('title', 'thumbnail'),
+        'show_in_rest' => true,
+        'public' => false,
+        'archive' => false,
+        'publicly_queryable' => false,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'show_in_nav_menus' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'cpt_performance'),
+        'has_archive' => false,
+        'hierarchical' => true,
+    );
+    register_post_type('cpt_performance', $args);
+}
+add_action('init', 'tailwind_specialty_cpt');

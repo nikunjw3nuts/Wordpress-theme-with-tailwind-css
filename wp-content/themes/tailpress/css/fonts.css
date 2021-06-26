@@ -1,0 +1,88 @@
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url(/fonts/Inter-Regular.woff2?58cfb2da6e436473ec40361d0d263362) format('woff2'),
+        url(/fonts/Inter-Regular.woff?e01d3dfefd68ed7d7bb8f81369e6bf24) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url(/fonts/Inter-Medium.woff2?1999ba5042aff7c1b058c271b5c63e4f) format('woff2'),
+        url(/fonts/Inter-Medium.woff?0ad69899c7b7b82dd0938afb88edb0f8) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url(/fonts/Inter-SemiBold.woff2?dbdc6685898755cefc2b2a0722042bfe) format('woff2'),
+        url(/fonts/Inter-SemiBold.woff?37c7e2bd212c695ffbad8af881cc66cc) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cabin Regular';
+    src: url(/fonts/Cabin-Regular.woff2?cfe6f3bb32f0d4ae0ab3d4aa56e23701) format('woff2'),
+        url(/fonts/Cabin-Regular.woff?087ced32535958e5a818b8ec328ea651) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cabin Medium';
+    src: url(/fonts/Cabin-Medium.woff2?90f5ba1e9ade22a7fb5be95f1bbb9321) format('woff2'),
+        url(/fonts/Cabin-Medium.woff?6f14d05d5481234d916c6cf85fc549cf) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cabin Bold';
+    src: url(/fonts/Cabin-Bold.woff2?d2e1b8df25d2796cb7a38f71bd6ee128) format('woff2'),
+        url(/fonts/Cabin-Bold.woff?a1ebba44794f63668101410c229506ff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cabin SemiCondensed Regular';
+    src: url(/fonts/CabinSemiCondensed-Regular.woff2?e17b07e1027ad9444544f4a50e9702a6) format('woff2'),
+        url(/fonts/CabinSemiCondensed-Regular.woff?1f2d527542c2288e06c8952c315766d5) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cabin SemiCondensed Bold';
+    src: url(/fonts/CabinSemiCondensed-Bold.woff2?689f6b3be9bd1f7e4c90936a84161a95) format('woff2'),
+        url(/fonts/CabinSemiCondensed-Bold.woff?ae0c19f80b84ca45dfa1a00cb19b694d) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cabin SemiCondensed SemiBold';
+    src: url(/fonts/CabinSemiCondensed-SemiBold.woff2?b71b0b160c0190760a87f554dc3df1ce) format('woff2'),
+        url(/fonts/CabinSemiCondensed-SemiBold.woff?f7a024a5ebe2c5f67391d709c086a3a6) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MLTokyoAurora Sans';
+    src: url(/fonts/MLTokyoAurora-Sans.woff2?2f8ffac5f9d37379a129ed1f5203c45f) format('woff2'),
+        url(/fonts/MLTokyoAurora-Sans.woff?8ee771d5797bff6d40cb3fade3b3342b) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibre Regular';
+    src: url(/fonts/Calibre-Regular.woff2?55382342f813f1c84be0c7d6047cc7c7) format('woff2'),
+        url(/fonts/Calibre-Regular.woff?cd6250da25ae539b256f53ff1b043597) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
