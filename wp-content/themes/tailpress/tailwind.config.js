@@ -29,7 +29,13 @@ module.exports = {
             },
         },
         extend: {
-            colors: tailpress.colors
+            colors: {
+                pink: {
+                    400: '#FEEBDF',
+                    700: '#F5AFB3',
+                    900: '#E95742'
+                  },
+            }
         },
     },
     plugins: [

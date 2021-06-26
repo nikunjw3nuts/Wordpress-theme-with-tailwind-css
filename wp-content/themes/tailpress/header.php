@@ -18,7 +18,7 @@
 	<?php do_action( 'tailpress_header' ); ?>
 	<div class="header">
 		<div class="header_wapper">
-			<div class="flex w-full px-5 py-3">
+			<div class="container">
 				<div class="logo"><a href="<?php echo get_bloginfo( 'url' ); ?>"><img src="<?php echo get_field('header_logo','option')?>" alt=""></a></div>
 				<div class="navigation_menu">
 					<?php

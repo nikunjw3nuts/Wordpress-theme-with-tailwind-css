@@ -32,11 +32,20 @@
         max-width: 1536px
     }
 }
-.visible {
-    visibility: visible
+.fixed {
+    position: fixed
+}
+.relative {
+    position: relative
+}
+.top-0 {
+    top: 0px
 }
 .m-8 {
     margin: 2rem
+}
+.m-0 {
+    margin: 0px
 }
 .my-8 {
     margin-top: 2rem;
@@ -62,26 +71,23 @@
 .mb-12 {
     margin-bottom: 3rem
 }
+.ml-auto {
+    margin-left: auto
+}
 .block {
     display: block
 }
-.inline {
-    display: inline
-}
 .flex {
     display: flex
-}
-.table {
-    display: table
-}
-.contents {
-    display: contents
 }
 .hidden {
     display: none
 }
 .h-1 {
     height: 0.25rem
+}
+.h-12 {
+    height: 3rem
 }
 .min-h-screen {
     min-height: 100vh
@@ -95,17 +101,11 @@
 .max-w-sm {
     max-width: 24rem
 }
-.border-collapse {
-    border-collapse: collapse
-}
-.transform {
-    transform: var(--tw-transform)
+.max-w-4xl {
+    max-width: 56rem
 }
 .cursor-pointer {
     cursor: pointer
-}
-.resize {
-    resize: both
 }
 .list-disc {
     list-style-type: disc
@@ -122,19 +122,11 @@
 .rounded {
     border-radius: 0.25rem
 }
-.border {
-    border-width: 1px
+.rounded-full {
+    border-radius: 9999px
 }
 .border-b {
     border-bottom-width: 1px
-}
-.border-primary {
-    --tw-border-opacity: 1;
-    border-color: rgba(14, 165, 233, var(--tw-border-opacity))
-}
-.bg-primary {
-    --tw-bg-opacity: 1;
-    background-color: rgba(14, 165, 233, var(--tw-bg-opacity))
 }
 .bg-gray-200 {
     --tw-bg-opacity: 1;
@@ -148,6 +140,13 @@
     --tw-bg-opacity: 1;
     background-color: rgba(249, 250, 251, var(--tw-bg-opacity))
 }
+.bg-pink-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(233, 87, 66, var(--tw-bg-opacity))
+}
+.p-0 {
+    padding: 0px
+}
 .py-2 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem
@@ -160,17 +159,26 @@
     padding-left: 0.75rem;
     padding-right: 0.75rem
 }
-.px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem
+.py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem
 }
 .py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem
 }
-.py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem
+.px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem
+}
+.pr-8 {
+    padding-right: 2rem
+}
+.pl-5 {
+    padding-left: 1.25rem
+}
+.pt-16 {
+    padding-top: 4rem
 }
 .text-center {
     text-align: center
@@ -187,6 +195,10 @@
     font-size: 0.875rem;
     line-height: 1.25rem
 }
+.text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem
+}
 .font-bold {
     font-weight: 700
 }
@@ -195,6 +207,9 @@
 }
 .font-extrabold {
     font-weight: 800
+}
+.uppercase {
+    text-transform: uppercase
 }
 .leading-tight {
     line-height: 1.25
@@ -226,9 +241,6 @@
 .text-blue-500 {
     --tw-text-opacity: 1;
     color: rgba(59, 130, 246, var(--tw-text-opacity))
-}
-.underline {
-    text-decoration: underline
 }
 .antialiased {
     -webkit-font-smoothing: antialiased;
@@ -379,6 +391,40 @@
     max-width: 100%
 }
 @media (min-width: 768px) {
+    .md\:container {
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem
+    }
+    @media (min-width: 640px) {
+        .md\:container {
+            max-width: 640px;
+            padding-right: 2rem;
+            padding-left: 2rem
+        }
+    }
+    @media (min-width: 768px) {
+        .md\:container {
+            max-width: 768px
+        }
+    }
+    @media (min-width: 1024px) {
+        .md\:container {
+            max-width: 1024px;
+            padding-right: 0rem;
+            padding-left: 0rem
+        }
+    }
+    @media (min-width: 1280px) {
+        .md\:container {
+            max-width: 1280px
+        }
+    }
+    @media (min-width: 1536px) {
+        .md\:container {
+            max-width: 1536px
+        }
+    }
     .md\:my-6 {
         margin-top: 1.5rem;
         margin-bottom: 1.5rem
@@ -395,6 +441,40 @@
     }
 }
 @media (min-width: 1024px) {
+    .lg\:container {
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem
+    }
+    @media (min-width: 640px) {
+        .lg\:container {
+            max-width: 640px;
+            padding-right: 2rem;
+            padding-left: 2rem
+        }
+    }
+    @media (min-width: 768px) {
+        .lg\:container {
+            max-width: 768px
+        }
+    }
+    @media (min-width: 1024px) {
+        .lg\:container {
+            max-width: 1024px;
+            padding-right: 0rem;
+            padding-left: 0rem
+        }
+    }
+    @media (min-width: 1280px) {
+        .lg\:container {
+            max-width: 1280px
+        }
+    }
+    @media (min-width: 1536px) {
+        .lg\:container {
+            max-width: 1536px
+        }
+    }
     .lg\:text-5xl {
         font-size: 3rem;
         line-height: 1

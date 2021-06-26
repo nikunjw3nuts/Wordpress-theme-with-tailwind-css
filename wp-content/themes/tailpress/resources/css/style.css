@@ -1,0 +1,35 @@
+body { @apply bg-pink-700; font-family: 'Inter-Regular' !important;}
+/*.container { @apply lg:container xl:container mx-auto; }*/
+.header { @apply fixed top-0 w-full; }
+.header .header_wapper { @apply relative w-full bg-pink-400;}
+.header .logo { @apply m-0;}
+.header .logo a { @apply block;}
+.header .container { @apply py-3 pr-8 pl-5 flex items-center w-full max-w-none; }
+.header .navigation_menu { @apply ml-auto flex items-center;}
+.header .navigation_menu ul { @apply flex items-center m-0 p-0;}
+.header .navigation_menu ul li { @apply block m-0 p-0 mr-8;}
+.header .navigation_menu ul li a { @apply block uppercase tracking-wider; font-family: 'Cabin SemiCondensed Bold';}
+.header .ticket-btn { @apply flex items-center h-12 px-8 rounded-full bg-pink-900 text-white uppercase; font-family: 'Cabin SemiCondensed Bold';}
+.main_wapper { @apply pt-20;}
+.contain_wapper { @apply py-20;}
+
+.banner_wapper { @apply w-full relative;}
+.banner_wapper .home_banner {}
+.banner_wapper .home_banner .imagebox { @apply w-full bg-no-repeat; background-position: center bottom;}
+
+.footer { @apply -mt-24;}
+.footer .top_banner { min-height: 417px; @apply bg-no-repeat; background-position: center top; border-bottom: solid 3px #12110C;}
+.footer .top_banner::before { @apply block; content: ''; padding-top: 21.92%;}
+.ft_newsletter { @apply pt-16 bg-pink-400;}
+.ft_newsletter .container { @apply md:container mx-auto;}
+.ft_newsletter .news_wrapper { @apply w-full max-w-4xl mx-auto;}
+.ft_newsletter .news_wrapper .left_text { @apply max-w-xs;}
+.ft_newsletter .news_wrapper .left_text h3 { @apply flex m-0 text-3xl mb-3; font-family: 'Cabin Bold';}
+.ft_newsletter .news_wrapper .left_text p { @apply text-base;}
+
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
