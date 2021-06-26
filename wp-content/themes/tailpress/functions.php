@@ -7,9 +7,13 @@ function tailpress_enqueue_scripts() {
 	$theme = wp_get_theme();
 
 	wp_enqueue_style( 'tailpress', tailpress_get_mix_compiled_asset_url( 'css/app.css' ), array(), $theme->get( 'Version' ) );
-	wp_enqueue_style( 'tailpress-fonts', tailpress_get_mix_compiled_asset_url( 'css/fonts.css' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_style( 'tailpress-fonts', tailpress_get_mix_compiled_asset_url( 'fonts/fonts.css' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_style( 'owl.carousel-style', tailpress_get_mix_compiled_asset_url( 'css/owl.carousel.css' ), array(), $theme->get( 'Version' ) );
 	wp_enqueue_style( 'tailpress-style', tailpress_get_mix_compiled_asset_url( 'css/style.css' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_script( 'tailpress-slim', 'https://code.jquery.com/jquery-3.2.1.slim.min.js', array(), $theme->get( 'Version' ) );//
 	wp_enqueue_script( 'tailpress', tailpress_get_mix_compiled_asset_url( 'js/app.js' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_script( 'owl.carousel', tailpress_get_mix_compiled_asset_url( 'js/owl.carousel.js' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_script( 'script', tailpress_get_mix_compiled_asset_url( 'js/script.js' ), array(), $theme->get( 'Version' ) );
 }
 
 add_action( 'wp_enqueue_scripts', 'tailpress_enqueue_scripts' );

@@ -1,0 +1,88 @@
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('Inter-Regular.woff2') format('woff2'),
+        url('Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('Inter-Medium.woff2') format('woff2'),
+        url('Inter-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url('Inter-SemiBold.woff2') format('woff2'),
+        url('Inter-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cabin Regular';
+    src: url('Cabin-Regular.woff2') format('woff2'),
+        url('Cabin-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cabin Medium';
+    src: url('Cabin-Medium.woff2') format('woff2'),
+        url('Cabin-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cabin Bold';
+    src: url('Cabin-Bold.woff2') format('woff2'),
+        url('Cabin-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cabin SemiCondensed Regular';
+    src: url('CabinSemiCondensed-Regular.woff2') format('woff2'),
+        url('CabinSemiCondensed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cabin SemiCondensed Bold';
+    src: url('CabinSemiCondensed-Bold.woff2') format('woff2'),
+        url('CabinSemiCondensed-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cabin SemiCondensed SemiBold';
+    src: url('CabinSemiCondensed-SemiBold.woff2') format('woff2'),
+        url('CabinSemiCondensed-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MLTokyoAurora Sans';
+    src: url('MLTokyoAurora-Sans.woff2') format('woff2'),
+        url('MLTokyoAurora-Sans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibre Regular';
+    src: url('Calibre-Regular.woff2') format('woff2'),
+        url('Calibre-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

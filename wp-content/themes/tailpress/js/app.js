@@ -58,6 +58,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/css/owl.carousel.css":
+/*!****************************************!*\
+  !*** ./resources/css/owl.carousel.css ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/css/style.css":
 /*!*********************************!*\
   !*** ./resources/css/style.css ***!
@@ -158,6 +171,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
 /******/ 			"css/style": 0,
+/******/ 			"css/owl.carousel": 0,
 /******/ 			"css/fonts": 0,
 /******/ 			"editor-style": 0,
 /******/ 			"css/app": 0
@@ -208,11 +222,12 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/style","css/fonts","editor-style","css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/style","css/fonts","editor-style","css/app"], () => (__webpack_require__("./resources/css/app.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/style","css/fonts","editor-style","css/app"], () => (__webpack_require__("./resources/css/editor-style.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/style","css/fonts","editor-style","css/app"], () => (__webpack_require__("./resources/fonts/fonts.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/style","css/fonts","editor-style","css/app"], () => (__webpack_require__("./resources/css/style.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/style","css/owl.carousel","css/fonts","editor-style","css/app"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/style","css/owl.carousel","css/fonts","editor-style","css/app"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/style","css/owl.carousel","css/fonts","editor-style","css/app"], () => (__webpack_require__("./resources/css/editor-style.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/style","css/owl.carousel","css/fonts","editor-style","css/app"], () => (__webpack_require__("./resources/fonts/fonts.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/style","css/owl.carousel","css/fonts","editor-style","css/app"], () => (__webpack_require__("./resources/css/owl.carousel.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/style","css/owl.carousel","css/fonts","editor-style","css/app"], () => (__webpack_require__("./resources/css/style.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
