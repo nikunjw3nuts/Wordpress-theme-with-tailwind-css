@@ -1,1 +1,1 @@
-# tailwind
+# wordpress theme with tailwind css
